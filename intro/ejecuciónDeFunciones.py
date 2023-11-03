@@ -7,6 +7,8 @@ w = input('Introduce otro dato: ')
 
 print(funcion2(q, w))
 
+#import sys
+#sys.path.append('/ruta')
 
 #import funcionesExternas as F
 
