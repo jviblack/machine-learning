@@ -1,13 +1,12 @@
-archivoSalida = open('Salida.txt', 'wt')
+archivo = open('Salida.txt', 'rt')
 
-archivoSalida.write(str(type(archivoSalida)))
+archivo.seek(20) #Salta a la posición 20 dento del texto
+print(archivo.read())
 
-archivoSalida.write("\nHola Archivo")
-archivoSalida.write("\nOtra cosa")
-texto = "\nMás texto"
-archivoSalida.write(texto)
-archivoSalida.close()
+archivo.seek(0) #Vuelve a la posición 0
 
-archivoSalida = open('Salida.txt', 'rt')
-print(archivoSalida.read())
-archivoSalida.close()
+print(archivo.read(40))
+print(archivo.read())
+
+print(archivo.tell()) #Devuelve la posición del último caracter
+archivo.close()
