@@ -38,6 +38,7 @@ from scipy.cluster.vq import kmeans, vq
 
 
 x = dataframe.iloc[:, :-1].values
+# Rellenar valores faltantes con la media de la columna
 centroids, labels = kmeans(x, 3)
 
 centers = centroids
