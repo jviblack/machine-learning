@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # importar la base de datos iris
 
-archivo_iris = 'C:\Users\javier.couto\machinelearning\ejemploclustering\iris.data'
+archivo_iris = r'C:\Users\javier.couto\machinelearning\ejemploclustering\iris.data'
 dataframe = pd.read_csv(archivo_iris, header=None, names=['longitud_sepalo', 'ancho_sepalo', 'longitud_petalo', 'ancho_petalo', 'especies'])
 
 x = dataframe
